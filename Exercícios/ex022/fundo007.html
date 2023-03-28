@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Teste de Push!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde magni, nesciunt quaerat, hic sequi consectetur temporibus repellendus sapiente dignissimos, quae facere ipsa repellat blanditiis ipsam id nam iste a iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fuga ipsum, maxime corrupti sequi rem eos. Magnam, mollitia? Adipisci eum dolor temporibus maxime minus labore obcaecati, nobis quod soluta perspiciatis?</p>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
